@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo - BEM/Stylus</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BEM/Stylus - Aplicação na prática</h1>
+        <p>Esse é um pequeno projeto para aplicar o uso do pré-processador <b>Stylus</b> e a metodologia <b>BEM (Block, Element e Modifier)</b>.
+        </p>
+        <div class="formulario formulario--vertical">
+            <h4>Padrão</h4>
+            <div class="formulario__group">
+                <label for="input-default" class="formulario__label">Nome</label>
+                <input type="text" id="input-default" class="formulario__text-input" />
+            </div>
+            <h4>Estados</h4>
+            <div class="formulario__group formulario__group--danger">
+                <label for="input-danger" class="formulario__label">Nome</label>
+                <input type="text" id="input-danger" class="formulario__text-input" />
+            </div>
+            <div class="formulario__group formulario__group--success">
+                <label for="input-success" class="formulario__label">Nome</label>
+                <input type="text" id="input-success" class="formulario__text-input" />
+            </div>
+            <div class="formulario__group formulario__group--info">
+                <label for="input-info" class="formulario__label">Nome</label>
+                <input type="text" id="input-info" class="formulario__text-input" />
+            </div>
+            <h4>Composições</h4>
+            <div class="formulario__group">
+                <label for="input-info" class="formulario__label">Nome</label>
+                <input type="text" id="input-info" class="formulario__text-input" />
+                <span class="formulario__help-text">Este campo é obrigatório</span>
+            </div>
+            <div class="formulario__group formulario__group--danger">
+                <label for="input-info" class="formulario__label">E-mail</label>
+                <input type="text" id="input-info" class="formulario__text-input" />
+                <span class="formulario__help-text">O E-mail inserido é inválido</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

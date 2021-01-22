@@ -1,0 +1,63 @@
+.formulario
+    width 100%
+    display flex
+    flex-direction row
+    margin 0.5rem 0 0 0
+
+.formulario--vertical
+    flex-direction: column
+
+.formulario__group 
+    display flex
+    flex-direction column
+    padding 0.5rem
+
+.formulario__group--danger
+    .formulario__text-input
+        &, &:hover, &:focus
+            border-color danger
+
+    .formulario__label
+        color danger
+    
+    .formulario__help-text
+        color danger
+
+.formulario__group--success
+    .formulario__text-input
+        &, &:hover, &:focus
+            border-color success
+
+    .formulario__label
+        color success
+
+.formulario__group--info
+    .formulario__text-input
+        &, &:hover, &:focus
+            border-color info
+
+    .formulario__label
+        color info
+
+.formulario__label
+    font-size 0.9rem
+    margin-left 2px
+
+.formulario__text-input
+    font-size 0.9rem
+    padding 0.5rem
+    border-radius 0.5rem
+    border 2px solid grey
+    transition()
+
+    &:hover
+        border-color dark-grey
+        transition()
+
+    &:focus
+        border-color purple
+
+.formulario__help-text
+    font-size 0.8rem
+    padding-top 0.2rem
+    color dark-grey

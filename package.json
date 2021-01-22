@@ -1,0 +1,18 @@
+{
+  "name": "estudobem",
+  "version": "1.0.0",
+  "description": "Aplicação da metodologia BEM, com o pré-processador Stylus",
+  "main": "index.js",
+  "author": "Eduardo Torres <contato@eduardotorres.dev>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "npm-run-all --parallel server watch",
+    "server": "browser-sync start --server --files */* *",
+    "watch": "stylus -c -w ./stylus/main.styl -o ./css/styles.css"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "npm-run-all": "^4.1.5"
+  }
+}
